@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/User/AndroidStudioProjects/Index/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/Index/app/src/main/res/layout/list_item.xml" value="0.1" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/Index_debug/app/src/main/res/drawable-v24/index_button.xml" value="0.173" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/Index_debug/app/src/main/res/drawable/bottom_button_text_selector.xml" value="0.2025" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/Index_debug/app/src/main/res/drawable/cart_button_selector.xml" value="0.2025" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/Index_debug/app/src/main/res/drawable/home_button_selector.xml" value="0.2025" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/Index_debug/app/src/main/res/drawable/information_button_selector.xml" value="0.2025" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/Index_debug/app/src/main/res/drawable/shop_button_selector.xml" value="0.2025" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/Index_debug/app/src/main/res/drawable/user_button_selector.xml" value="0.2025" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/Index_debug/app/src/main/res/layout/activity_fragment_h.xml" value="0.19427083333333334" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/Index_debug/app/src/main/res/layout/activity_fragment_home.xml" value="0.13405797101449277" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/Index_debug/app/src/main/res/layout/activity_fragmenth.xml" value="0.14719202898550723" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/Index_debug/app/src/main/res/layout/activity_home.xml" value="0.19427083333333334" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/Index_debug/app/src/main/res/layout/activity_main.xml" value="0.176" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/Index_debug/app/src/main/res/layout/activity_tpindex.xml" value="0.2" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/Index_debug/app/src/main/res/layout/activity_welcome.xml" value="0.25364583333333335" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/Index_debug/app/src/main/res/layout/fragment_blank.xml" value="0.1526268115942029" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/Index_debug/app/src/main/res/layout/list_item.xml" value="0.1" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

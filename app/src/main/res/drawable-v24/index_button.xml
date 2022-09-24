@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 預設時 -->
+    <item >
+        <shape>
+            <corners android:radius="150dip" />
+            <solid android:color="#FFDF9E"></solid>
+            <stroke android:color="@color/white"></stroke>
+        </shape>
+    </item>
+</selector>

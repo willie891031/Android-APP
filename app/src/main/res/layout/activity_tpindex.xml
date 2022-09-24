@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    tools:context=".TPIndex">
+
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:src="@drawable/logo"
+            android:background="#FFDF9E"/>
+
+        <ViewFlipper
+            android:id="@+id/flipper"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight=".5"
+            android:inAnimation="@anim/left_in"
+            android:outAnimation="@anim/right_out">
+            <ImageView
+                android:id="@+id/imageview1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/banner" />
+
+            <ImageView
+                android:id="@+id/imageview2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/banner" />
+
+            <ImageView
+                android:id="@+id/imageview3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/banner" />
+        </ViewFlipper>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.3"
+            android:paddingTop="10dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:text="蔬菜"
+                android:background="@drawable/index_button" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_margin="5dp"
+                android:text="水果"
+                android:background="@drawable/index_button"/>
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:backgroundTint="#FFE49E"
+                android:layout_margin="5dp"
+                android:text="米食"
+                android:background="@drawable/index_button"/>
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:backgroundTint="#FFE49E"
+                android:layout_margin="5dp"
+                android:text="加工品"
+                android:background="@drawable/index_button"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="最新商品"
+            android:textSize="20dp"
+            android:layout_marginTop="25dp"
+            android:paddingLeft="15dp"
+            android:textColor="@color/black"/>
+
+
+        <ViewFlipper
+            android:id="@+id/flipper2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.5"
+            android:inAnimation="@anim/left_in"
+            android:outAnimation="@anim/right_out"
+            android:padding="15dp">
+
+            <ImageView
+                android:id="@+id/imageview12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/cucumber" />
+
+            <ImageView
+                android:id="@+id/imageview22"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/rape" />
+
+            <ImageView
+                android:id="@+id/imageview32"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/blackfungus" />
+        </ViewFlipper>
+    </LinearLayout>
+
+    <RadioGroup
+        android:id="@+id/rg_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:paddingTop="12dp"
+        android:paddingBottom="7dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:background="#FFDF9E"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/tp_information"
+            style="@style/MainButtonStyle"
+            android:drawableTop="@drawable/information_button_selector"
+            android:textSize="10dp"
+            android:textColor="@color/black"
+            android:text="相關資訊" />
+
+        <RadioButton
+            android:id="@+id/tp_shop"
+            style="@style/MainButtonStyle"
+            android:drawableTop="@drawable/shop_button_selector"
+            android:textSize="10dp"
+            android:textColor="@color/black"
+            android:text="商品" />
+
+        <RadioButton
+            android:id="@+id/tp_home"
+            style="@style/MainButtonStyle"
+            android:drawableTop="@drawable/home_button_selector"
+            android:textSize="10dp"
+            android:textColor="@color/black"
+            android:text="首頁" />
+
+        <RadioButton
+            android:id="@+id/tp_cart"
+            style="@style/MainButtonStyle"
+            android:drawableTop="@drawable/cart_button_selector"
+            android:textSize="10dp"
+            android:textColor="@color/black"
+            android:text="購物車" />
+
+        <RadioButton
+            android:id="@+id/tp_user"
+            style="@style/MainButtonStyle"
+            android:drawableTop="@drawable/user_button_selector"
+            android:text="用戶中心"
+            android:textColor="@color/black"
+            android:textSize="10dp" />
+    </RadioGroup>
+
+</LinearLayout>

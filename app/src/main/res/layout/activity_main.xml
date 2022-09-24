@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/top_tv"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:text="電商平台"
+        android:textSize="18sp"
+        android:textColor="#FFFFFF"
+        android:background="#FF8F03"
+        android:gravity="center"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <ListView
+            android:id="@+id/lv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/content"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical" />
+
+    <RadioGroup
+        android:id="@+id/rg_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:paddingTop="12dp"
+        android:paddingBottom="7dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:background="#FFDF9E"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/tp_information"
+            style="@style/MainButtonStyle"
+            android:drawableTop="@drawable/information_button_selector"
+            android:text="相關資訊"
+            android:textColor="@color/black"
+            android:textSize="10dp" />
+
+        <RadioButton
+            android:id="@+id/tp_shop"
+            style="@style/MainButtonStyle"
+            android:drawableTop="@drawable/shop_button_selector"
+            android:textSize="10dp"
+            android:textColor="@color/black"
+            android:text="商品" />
+
+        <RadioButton
+            android:id="@+id/tp_home"
+            style="@style/MainButtonStyle"
+            android:drawableTop="@drawable/home_button_selector"
+            android:textSize="10dp"
+            android:textColor="@color/black"
+            android:text="首頁" />
+
+        <RadioButton
+            android:id="@+id/tp_cart"
+            style="@style/MainButtonStyle"
+            android:drawableTop="@drawable/cart_button_selector"
+            android:textSize="10dp"
+            android:textColor="@color/black"
+            android:text="購物車" />
+
+        <RadioButton
+            android:id="@+id/tp_user"
+            style="@style/MainButtonStyle"
+            android:drawableTop="@drawable/user_button_selector"
+            android:text="用戶中心"
+            android:textColor="@color/black"
+            android:textSize="10dp" />
+    </RadioGroup>
+
+
+
+</LinearLayout>
