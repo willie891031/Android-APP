@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="spinnerValue2">
+        <item>宅配</item>
+    </string-array>
+</resources>

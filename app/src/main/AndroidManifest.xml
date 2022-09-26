@@ -14,6 +14,15 @@
         android:theme="@style/Theme.Index"
         tools:targetApi="31">
         <activity
+            android:name=".shopcar"
+            android:exported="false" />
+        <activity
+            android:name=".filee"
+            android:exported="false" />
+        <activity
+            android:name=".shop"
+            android:exported="false" />
+        <activity
             android:name=".TPIndex"
             android:exported="false" />
         <activity

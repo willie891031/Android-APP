@@ -9,6 +9,7 @@ import android.util.DisplayMetrics;
 import android.view.Display;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.BaseAdapter;
 import android.os.Bundle;
 import android.widget.ImageView;
@@ -16,6 +17,7 @@ import android.widget.ListView;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.TextView;
+import com.example.index.ActivityTo;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -36,7 +38,16 @@ public class MainActivity extends AppCompatActivity {
         MyBaseAdapter mAdapter = new MyBaseAdapter();
         //加載適配器
         listView.setAdapter(mAdapter);
-
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                Intent intent = new Intent();
+                intent.setClass(MainActivity.this, shop.class);
+                MainActivity.this.finish();
+                MainActivity.this.startActivity(intent);
+            }
+        });
+/**========================Radio Button========================**/
         RadioGroup rbGrop = findViewById(R.id.rg_main);
         rbGrop.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
