@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".signin">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="會員登入"
+            android:textSize="26sp" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/user_icon" />
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_weight="7">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/textView11"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="電子郵件"
+                    android:textSize="26sp" />
+
+                <EditText
+                    android:id="@+id/email_edit"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="2"
+                    android:ems="10"
+                    android:gravity="center"
+                    android:inputType="textEmailAddress"
+                    android:textSize="26sp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/textView12"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="密碼"
+                    android:textSize="26sp" />
+
+                <EditText
+                    android:id="@+id/password_edit"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:ems="10"
+                    android:inputType="textPassword"
+                    android:textSize="26sp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center">
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <Button
+                    android:id="@+id/sign_bt"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:text="會員登入"
+                    android:textSize="26sp" />
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/go_register"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="點此註冊帳號"
+                    android:textSize="20sp" />
+            </TableRow>
+        </TableLayout>
+
+
+    <RadioGroup
+        android:id="@+id/rg_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:paddingTop="12dp"
+        android:paddingBottom="7dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:background="#FFDF9E"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/tp_information"
+            style="@style/MainButtonStyle"
+            android:drawableTop="@drawable/information_button_selector"
+            android:textSize="10dp"
+            android:textColor="@color/black"
+            android:text="相關資訊" />
+
+        <RadioButton
+            android:id="@+id/tp_shop"
+            style="@style/MainButtonStyle"
+            android:drawableTop="@drawable/shop_button_selector"
+            android:textSize="10dp"
+            android:textColor="@color/black"
+            android:text="商品" />
+
+        <RadioButton
+            android:id="@+id/tp_home"
+            style="@style/MainButtonStyle"
+            android:drawableTop="@drawable/home_button_selector"
+            android:textSize="10dp"
+            android:textColor="@color/black"
+            android:text="首頁" />
+
+        <RadioButton
+            android:id="@+id/tp_cart"
+            style="@style/MainButtonStyle"
+            android:drawableTop="@drawable/cart_button_selector"
+            android:textSize="10dp"
+            android:textColor="@color/black"
+            android:text="購物車" />
+
+        <RadioButton
+            android:id="@+id/tp_user"
+            style="@style/MainButtonStyle"
+            android:drawableTop="@drawable/user_button_selector"
+            android:text="用戶中心"
+            android:textColor="@color/black"
+            android:textSize="10dp" />
+    </RadioGroup>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

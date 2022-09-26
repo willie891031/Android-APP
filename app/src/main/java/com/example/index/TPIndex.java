@@ -1,5 +1,7 @@
 package com.example.index;
 
+import static com.example.index.ActivityTo.doFinishAndStart;
+
 import android.content.Intent;
 import android.os.Bundle;
 import android.widget.RadioButton;
@@ -36,34 +38,19 @@ public class TPIndex extends AppCompatActivity {
             public void onCheckedChanged(RadioGroup rbGroup, int checkedId) {
                 RadioButton rb = (RadioButton) findViewById(checkedId);
                 if (checkedId == R.id.tp_information){
-                    Intent intent = new Intent();
-                    intent.setClass(TPIndex.this, MainActivity.class);
-                    TPIndex.this.finish();
-                    TPIndex.this.startActivity(intent);
+                    doFinishAndStart(TPIndex.this,member.class);
                 }
                 else if (checkedId == R.id.tp_shop){
-                    Intent intent = new Intent();
-                    intent.setClass(TPIndex.this, MainActivity.class);
-                    TPIndex.this.finish();
-                    TPIndex.this.startActivity(intent);
+                    doFinishAndStart(TPIndex.this,MainActivity.class);
                 }
                 else if (checkedId == R.id.tp_home){
-                    Intent intent = new Intent();
-                    intent.setClass(TPIndex.this, TPIndex.class);
-                    TPIndex.this.finish();
-                    TPIndex.this.startActivity(intent);
+                    doFinishAndStart(TPIndex.this,TPIndex.class);
                 }
                 else if (checkedId == R.id.tp_cart){
-                    Intent intent = new Intent();
-                    intent.setClass(TPIndex.this, MainActivity.class);
-                    TPIndex.this.finish();
-                    TPIndex.this.startActivity(intent);
+                    doFinishAndStart(TPIndex.this,shopcar.class);
                 }
                 else if (checkedId == R.id.tp_user){
-                    Intent intent = new Intent();
-                    intent.setClass(TPIndex.this, MainActivity.class);
-                    TPIndex.this.finish();
-                    TPIndex.this.startActivity(intent);
+                    doFinishAndStart(TPIndex.this,signin.class);
                 }
             }
         });
